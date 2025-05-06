@@ -3,6 +3,53 @@
     padding: 0;
 }
 
-h1 {
-    color: lightseagreen;
+body {
+    font-family: Roboto;
+}
+.main {
+    display: grid;
+    /* grid-template-columns: 1fr 4fr; */
+}
+
+.main > div {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: deepskyblue;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.first-list {
+    margin-top: 50px;
+}
+
+.second-list {
+    margin-top: 30px;
+}
+
+.first-list, .second-list {
+    font-size: 20px;
+}
+
+.logo-icon > img {
+    width: 30px;
+    height: 30px;
+    vertical-align: text-bottom;
+}
+
+.list-item-logo {
+    padding-right: 15px;
+}
+.list-item-logo > img {
+    width: 25px;
+    height: 25px;
+    vertical-align: text-bottom;
 }
