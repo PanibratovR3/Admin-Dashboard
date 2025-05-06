@@ -157,14 +157,15 @@ ul {
 .greeting, .profile-name {
     text-align: left;
     font-weight: bold;
-    padding-top: 10px;
 }
 
 .profile-name {
-    font-size: 20px;
+    font-size: 23px;
+    padding-top: 10px;
 }
 .greeting {
     font-size: 15px;
+    padding-top: 8px;
 }
 
 .options {
