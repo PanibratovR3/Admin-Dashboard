@@ -15,7 +15,8 @@ input[type="text"] {
 
 .main {
     display: grid;
-    /* grid-template-columns: 1fr 4fr; */
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .main > div {
@@ -25,13 +26,17 @@ input[type="text"] {
 }
 
 .sidebar {
-    background-color: deepskyblue;
+    background-color: #00bfff;
     color: white;
     font-weight: bold;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
 }
 
 ul {
     list-style-type: none;
+    display: grid;
+    justify-items: start;
 }
 
 .second-list {
@@ -45,19 +50,16 @@ ul {
 .logo-icon > img {
     width: 30px;
     height: 30px;
-    vertical-align:auto;
 }
 
 .logo-text {
-    display: inline-block;
-    padding-bottom: 30px;
-    padding-left: 10px;
+    justify-self: start;
+    text-align: start;
 }
 
 .main-logo {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
+    display: grid;
+    grid-auto-flow: column;
 }
 
 .list-item-logo {
@@ -69,6 +71,7 @@ ul {
     height: 25px;
     vertical-align: text-bottom;
 }
+
 
 .search {
     padding-top: 10px;
@@ -87,15 +90,11 @@ ul {
     vertical-align:middle
 }
 
-.header {
-    display: grid;
-    grid-template-rows: 2fr 2fr;
-    align-content: start;
-}
+
 
 .header-first-row {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 .notifications {
@@ -127,20 +126,19 @@ ul {
     font-weight: bold;
     vertical-align:super;
     font-size: 20px;
-    margin-top: 15px;
+    align-self: center;
 }
 
 .header-second-row {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr;
     grid-auto-flow: column;
+    margin-top: 30px;
 }
 
 .profile {
     display: grid;
     grid-template-columns: 1fr 7fr;
-    justify-content: start;
-    row-gap: 10px;
 }
 
 .profile-icon {
@@ -159,10 +157,14 @@ ul {
 .greeting, .profile-name {
     text-align: left;
     font-weight: bold;
+    padding-top: 10px;
 }
 
+.profile-name {
+    font-size: 20px;
+}
 .greeting {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .options {
@@ -170,7 +172,6 @@ ul {
     grid-template-columns: repeat(3, 100px);
     gap: 30px;
     align-items: center;
-    justify-content: center;
 }
 
 button {
@@ -181,4 +182,8 @@ button {
     border-radius: 10px;
     height: 30px;
     font-size: 18px;
+}
+
+.main-content {
+    background-color: #d4d3d3;
 }
