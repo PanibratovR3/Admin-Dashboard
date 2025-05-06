@@ -5,6 +5,11 @@
 
 body {
     font-family: Roboto;
+    font-size: 12px;
+}
+input[type="text"] {
+    font-family: inherit;
+    font-size: 100%;
 }
 .main {
     display: grid;
@@ -27,10 +32,6 @@ ul {
     list-style-type: none;
 }
 
-.first-list {
-    margin-top: 50px;
-}
-
 .second-list {
     margin-top: 30px;
 }
@@ -42,9 +43,20 @@ ul {
 .logo-icon > img {
     width: 30px;
     height: 30px;
-    vertical-align: text-bottom;
+    vertical-align:auto;
 }
 
+.logo-text {
+    display: inline-block;
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+
+.main-logo {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
 .list-item-logo {
     padding-right: 15px;
 }
@@ -53,4 +65,56 @@ ul {
     width: 25px;
     height: 25px;
     vertical-align: text-bottom;
+}
+
+.search {
+    padding-top: 10px;
+}
+.search-field {
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    width: 40vw;
+}
+
+.search img {
+    width: 35px;
+    height: 35px;
+    vertical-align:middle
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.header-first-row {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+.notifications {
+    display: grid;
+    justify-items: center;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 12px;
+}
+.notify-icon > img {
+    width: 50px;
+    height: 50px;
+}
+.notification-profile {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.notification-profile > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.notification-profile-name {
+    font-weight: bold;
+    vertical-align:super;
+    font-size: 20px;
+    margin-top: 15px;
 }
