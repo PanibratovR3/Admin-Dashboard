@@ -16,7 +16,7 @@ input[type="text"] {
 .main {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 3fr 1fr;
 }
 
 .main > div {
@@ -30,7 +30,7 @@ input[type="text"] {
     color: white;
     font-weight: bold;
     grid-column: 1 / 2;
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
 }
 
 ul {
@@ -187,4 +187,61 @@ button {
 
 .main-content {
     background-color: #d4d3d3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row: 2 / 5;
+}
+
+.main-content > div {
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: left;
+}
+
+.projects {
+    grid-row: 1 / 3;
+}
+
+.trending {
+    grid-column: 2 / 3;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    border-left: 7px solid orange;
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+}
+
+.project-card-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-card-text {
+    font-size: 15px;
+}
+
+.project-setting-logo {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+
+.project-card-settings {
+    display: grid;
+    justify-content: end;
+    grid-auto-flow: column;
+    gap: 10px;
+}
+.project-setting-logo > img {
+    width: 100%;
+    height: 100%;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
